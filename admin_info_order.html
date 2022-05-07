@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin_style.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <title>CarRent_Admin</title>
+</head>
+
+<body class="container">
+    <header class="container row no-gutters">
+        <nav class="navbar head navbar-expand-lg navbar-light col-12">
+            <a class="navbar-brand" href="#">
+                <img src="logo_pictures/Carrent.svg" width="170px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_messages.html">Сообщения</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="admin_feedback.html">Обратная связь</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Пользователи
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="admin_clients.html">Клиенты</a>
+                            <a class="dropdown-item" href="admin_companies.html">Компании</a>
+                            <a class="dropdown-item " href="admin_users.html">
+                                Администраторы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_review.html">Отзывы</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="admin_orders.html">Заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="">Выйти</a>
+                    </li>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container row pt-4 col-12 no-gutters">
+
+        <section class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="admin_orders.html">Все заказы</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Заказ №12345</li>
+                </ol>
+            </nav>
+            <h1>Заказ №12345</h1>
+        </section>
+
+        <section class="row mt-2">
+            <div class="col-md-6 col-12">
+                <form class="form-row  ">
+                    <div class="form-row col-12 ">
+                        <label for="name" class="col-lg-4 col-12 col-form-label">Имя клиента</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="name" placeholder="Имя" disabled>
+                        </div>
+                        <label for="tel" class="col-lg-4 col-12 col-form-label">Телефон</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="tel" class="form-control mb-2" id="tel" placeholder="Телефон" disabled>
+                        </div>
+
+                        <label for="car" class="col-lg-4 col-12 col-form-label">Транспорт</label>
+                        <div class="col-lg-8 col-12 mb-2">
+                            <input type="text" class="form-control h-100" id="car" placeholder="Транспорт" disabled>
+                        </div>
+                        <label for="datestart" class="col-lg-4 col-12 col-form-label">Начало</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="date" class="form-control  mb-2" id="datestart" disabled>
+                        </div>
+                        <label for="dateend" class="col-lg-4 col-12 col-form-label">Конец</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="date" class="form-control  mb-2" id="dateend" disabled>
+                        </div>
+                        <label for="driver" class="col-lg-4 col-12 col-form-label">Водитель</label>
+                        <div class="col-lg-8 col-12">
+                            <select class="form-control mb-2" disabled>
+                                <option>Есть</option>
+                                <option>Нет</option>
+                            </select>
+                        </div>
+                        <label for="cost" class="col-lg-4 col-12 col-form-label">Стоимость</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="cost" placeholder="Стоимость" disabled>
+                        </div>
+
+                        <label for="payed" class="col-lg-4 col-12 col-form-label">Внесено</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="payed" placeholder="Внесено" disabled>
+                        </div>
+                        <label for="needpay" class="col-lg-4 col-12 col-form-label">Нужно внести</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="needpay" placeholder="Нужно внести"
+                                disabled>
+                        </div>
+
+                        <label for="company" class="col-lg-4 col-12 col-form-label">Компания</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="company" placeholder="Компания" disabled>
+                        </div>
+                        <label for="tel2" class="col-lg-4 col-12 col-form-label">Телефон</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="tel" class="form-control mb-2" id="tel2" placeholder="Телефон" disabled>
+                        </div>
+                        <label for="address" class="col-lg-4 col-12 col-form-label">Расположение</label>
+                        <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control mb-2" id="address" placeholder="Расположение"
+                                disabled>
+                        </div>
+                        <label for="note" class="col-lg-4 col-12 col-form-label">Примечание</label>
+                        <div class="col-lg-8 col-12">
+                            <textarea class="form-control mb-2" id="note" rows="5" placeholder="Примечание"
+                                readonly> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti officia soluta fugiat alias tenetur, nemo amet delectus error placeat facere aperiam labore. Enim nisi in soluta, aperiam minima placeat?</textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-12 mt-sm-2 mt-lg-0">
+                <div class="form-row mb-3">
+                    <div class="col-lg-4 col-12 mb-2">
+                        <a href="admin_add_order.html" class="btn btn-primary w-100">Редактировать</a>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-2">
+                        <a href="#" class="btn btn-danger p-2 w-100">Завершить</a>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-2">
+                        <a href="#" class="btn btn-danger p-2 w-100">Отменить</a>
+                    </div>
+                </div>
+
+                <div class="card text-center ">
+                    <h4 class="card-header bg-warning">Чат с клиентом</h4>
+                    <div class="card-body chat p-2">
+                        <div class="d-flex justify-content-start ">
+                            <div class="card bg-warning col-md-6 col-12 p-1 my-2">
+                                <p class="card-text">Здравствуйте! Сколько стоит аренда?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end ">
+                            <div class="card bg-primary col-md-6 col-12 p-1 my-2 text-white">
+                                <p class="card-text">Здравствуйте! 200р/час!</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start ">
+                            <div class="card bg-warning col-md-6 col-12 p-1 my-2">
+                                <p class="card-text">Здравствуйте! Сколько стоит аренда?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end ">
+                            <div class="card bg-primary col-md-6 col-12 p-1 my-2 text-white">
+                                <p class="card-text">Здравствуйте! 200р/час!</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start ">
+                            <div class="card bg-warning col-md-6 col-12 p-1 my-2">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus laudantium, dolores temporibus cum, molestias fugiat maiores iusto magni eligendi deleniti, quos veritatis neque sequi cupiditate debitis minus. Impedit, placeat facere.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end ">
+                            <div class="card bg-primary col-md-6 col-12 p-1 my-2 text-white">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolore. Autem aliquid qui quod est, odit architecto veniam cum amet magnam ipsum maiores, exercitationem deserunt beatae nisi corporis alias! Esse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer form-inline p-2">
+                        <div class="col-10 p-0">
+                            <textarea rows="1" placeholder="Введите сообщение" class="form-control w-100"></textarea>
+                        </div>
+                        <div class="col-2">
+                            <a href="#"><i class="fa-2x fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="col-12 p-0 mt-3">
+            <div class="card text-center">
+                <div class="card-header row justify-content-md-between m-0 align-items-center">
+                    <h5 class="col-md-auto col-12 m-0"> Виталий Окошкин</h5>
+                    <p class="col-md-auto col-12 m-0"> vitasfromwindow@mail.ru</p>
+                    <a href="#" class="btn btn-danger col-md-auto col-12" hidden>Удалить</a>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <textarea class="form-control" placeholder="Комментарий" rows="5"></textarea>
+                        <button type="submit" class="btn btn-primary col-md-3 col-12 p-2 float-right mt-2">
+                            Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-2 comments">
+                <div class="card text-center my-2">
+                    <div class="card-header row justify-content-md-between m-0 align-items-center">
+                        <h5 class="col-md-auto col-12 m-md-0"> Виталий Окошкин</h5>
+                        <p class="col-md-auto col-12 m-md-0"> vitasfromwindow@mail.ru</p>
+                        <a href="#" class="btn btn-danger col-md-auto col-12">Удалить</a>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores. Cum
+                            quibusdam aperiam dolores labore et doloribus ipsa hic tempora explicabo! Hic non eaque
+                            autem eos odio nisi pariatur saepe!</p>
+                    </div>
+                </div>
+                <div class="card text-center my-2">
+                    <div class="card-header row justify-content-md-between m-0 align-items-center">
+                        <h5 class="col-md-auto col-12 m-md-0"> Виталий Окошкин</h5>
+                        <p class=" col-md-auto col-12 m-md-0"> vitasfromwindow@mail.ru</p>
+                        <a href="#" class="btn btn-danger col-md-auto col-12">Удалить</a>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores. Cum
+                            quibusdam aperiam dolores labore et doloribus ipsa hic tempora explicabo! Hic non eaque
+                            autem eos odio nisi pariatur saepe!</p>
+                    </div>
+                </div>
+                <div class="card text-center my-2">
+                    <div class="card-header row justify-content-md-between m-0 align-items-center">
+                        <h5 class="col-md-auto col-12 m-md-0"> Виталий Окошкин</h5>
+                        <p class="col-md-auto col-12 m-md-0"> vitasfromwindow@mail.ru</p>
+                        <a href="#" class="btn btn-danger col-md-auto col-12">Удалить</a>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores. Cum
+                            quibusdam aperiam dolores labore et doloribus ipsa hic tempora explicabo! Hic non eaque
+                            autem eos odio nisi pariatur saepe!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <wbr>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</body>
+
+</html>

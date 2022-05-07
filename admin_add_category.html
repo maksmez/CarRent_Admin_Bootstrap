@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin_style.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <title>CarRent_Admin</title>
+</head>
+
+<body class="container">
+    <header class="container row no-gutters">
+        <nav class="navbar head navbar-expand-lg navbar-light col-12">
+            <a class="navbar-brand" href="../index.html">
+                <img src="css/logo_pictures/Carrent.svg" width="170px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="admin_messages.html">Сообщения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_feedback.html">Обратная связь</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Пользователи
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item " href="admin_clients.html">Клиенты</a>
+                            <a class="dropdown-item" href="admin_companies.html">Компании</a>
+                            <a class="dropdown-item" href="admin_users.html">
+                                Администраторы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="admin_review.html">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="admin_orders.html">Заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admin_catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="">Выйти</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container row pt-4 col-12 no-gutters">
+
+        <section class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="admin_catalog.html">Каталог</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Добавить категорию</li>
+                </ol>
+            </nav>
+
+            <div class="row mb-3 ">
+                <h1 class="col-lg-7">Добавить категорию</h1>
+                <div class="col-lg-5 col-12 d-lg-flex ">
+                    <div class="col-lg-6 col-12 p-0 px-lg-3">
+                        <a href="" class="btn btn-dark w-100">Скрыть</a>
+                    </div>
+                    <div class="col-lg-6 col-12 p-0 px-lg-3 pr-lg-0 mt-2 mt-lg-0">
+                        <a href="" class="btn btn-danger  w-100">Удалить</a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="row">
+                <div class="col-md-7 col-12">
+                    <div class="form-group">
+                        <label class="col-form-label">Название</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group d-sm-flex justify-content-between">
+                        <button class="btn btn-success col-sm-4 col-12 mb-2 mb-sm-0">Добавить</button>
+                        <select class="form-control col-sm-7 col-12">
+                            <option value="" disabled selected>Целое</option>
+                            <option>Текст</option>
+                        </select>
+                    </div>
+                    <div class="form-group d-sm-flex justify-content-between">
+                        <input type="text" class="form-control col-sm-7 col-12 mb-2 mb-sm-0">
+                        <button class="btn btn-success col-sm-4 col-12">Ок</button>
+
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Марка</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Текст</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Модель</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Текст</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Вместительность</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Целое</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Год выпуска</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Целое</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+
+                    </div>
+                    <div class="form-row  px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Водитель</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Булево</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Владелец</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Текст</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+
+                    </div>
+                    <div class="form-row px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Телефон</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Текст</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                        <hr class="w-100">
+
+                    </div>
+                    <div class="form-row mb-4 px-1">
+                        <label class="col-form-label col-sm-6 px-0 col-12">Условия аренды</label>
+                        <label class="col-form-label col-sm-3 px-0 col-7">Текст</label>
+                        <button class="btn btn-danger col-sm-3 col-5 ">Удалить</button>
+                    </div>
+
+                </div>
+                <div class="col-md-5 col-12"><div class="form-group d-flex justify-content-center">
+                        <img src="logo_pictures/bus.png" width="130px">
+                    </div>
+                    <div class="form-group justify-content-center row ">
+                        <div class="col-9">
+                            <button class="btn btn-success w-100 ">Изменить иконку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-5 mt-3 col-12 d-sm-flex justify-content-between">
+                    <a href="" class="btn btn-success col-lg-5 col-sm-5 col-12 mb-2 mb-sm-0 ">Сохранить</a>
+                    <a href="" class="btn btn-danger col-lg-5 col-sm-5 col-12">Отменить</a>
+                </div>
+            </form>
+            <wbr>
+        </section>
+    </main>
+</body>
+</html>
